@@ -5,6 +5,12 @@ public class DropEnemy extends Enemy{
 	}
 	public void move() {
 		super.move();
-		vx=vy=vy+0.1;
+		vy=vy+0.1;
+	}
+	public void draw(MyFrame f) {
+		f.setColor(0,128,0);
+		f.fillRect(x+8, y, 30, 10);
+		f.setColor(0,128,0);
+		f.fillRect(x+18,y+10,10,20);
 	}
 }
