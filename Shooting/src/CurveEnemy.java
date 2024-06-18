@@ -6,10 +6,10 @@ public class CurveEnemy extends Enemy{
 	public void move() {
 		super.move();
 		if(x<GameWorld.player.x) {
-			x++;
+			x+=4;
 		}
 		if(x>GameWorld.player.x) {
-			x--;
+			x-=4;
 		}
 	}
 	public void draw(MyFrame f) {
